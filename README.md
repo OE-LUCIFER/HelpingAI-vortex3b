@@ -2,7 +2,7 @@
 
 ## 💪 The most efforted project 💪
 
-This website is powered by an AI model available at [huggingface](https://huggingface.co/OEvortex/vortex-3b).
+This [website](https://vortex3b.netlify.app/loading) is powered by an AI model available at [huggingface](https://huggingface.co/OEvortex/vortex-3b).
 
 Also, all websites in this project are at [HelpingAI](https://huggingface.co/collections/Abhaykoul/helpingai-65891924a6854f9e1f71aece).
 
