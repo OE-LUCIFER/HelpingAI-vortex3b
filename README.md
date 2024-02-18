@@ -10,7 +10,6 @@ The Vortex-3b model is a 2.78 billion parameter causal language model created by
 
 Vortex is a 🌀 versatile model designed for various applications, including:
 
-- Default
 - Auto Study-Notes-Maker
 - AI Storymaker
 - AI Resume-Reviewer
