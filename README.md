@@ -17,4 +17,3 @@ Vortex is a 🌀 versatile model designed for various applications, including:
 - AI Storymaker
 - AI Resume-Reviewer
 - Helping-AI Researcher
-- Helping-AI PixelCraft
