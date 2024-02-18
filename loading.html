@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HelpingAI</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-color: #1a1a1a;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .loading-container {
+      position: relative;
+      font-size: 2em;
+      display: flex; /* Use flex to position elements in a row */
+      align-items: center;
+      margin-left: -100px;
+    }
+
+    .letter, .edit-letter {
+      display: inline-block;
+      perspective: 1000px;
+      transform-style: preserve-3d;
+      animation: dropIn 0.5s ease-out forwards;
+    }
+
+    .dot {
+      position: absolute;
+      top: 50%;
+      left: -20%; /* Starting from outside the left side of the page */
+      transform: translate(-50%, -50%);
+      background-color: #ff4500;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      animation: rollIn 1s ease-in-out forwards 0.5s, scaleDown 0.5s forwards 1.5s, fadeInDot 0s forwards 2.5s;
+    }
+
+    .edit-word {
+      position: absolute;
+      top: 50%;
+      left: 120%; /* Adjust the value to move it more to the right */
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      animation: fadeIn 1s ease-in-out forwards 2s;
+    }
+
+    @keyframes dropIn {
+      from {
+        transform: translateY(-50px) rotateX(90deg);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0) rotateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes rollIn {
+      from {
+        left: 30%;
+        transform: translate(-50%, -50%);
+      }
+      to {
+        left: 95%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    @keyframes scaleDown {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(0.2);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInDot {
+      from {
+        opacity: 1;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const editWord = document.querySelector('.edit-word');
+
+      // Add an event listener to the 'animationend' event for .edit-word
+      editWord.addEventListener('animationend', function() {
+        // Redirect to Home.html after the animation finishes
+        window.location.href = 'Home.html';
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="loading-container">
+    <span class="letter">H</span>
+    <span class="letter">e</span>
+    <span class="letter">l</span>
+    <span class="letter">p</span>
+    <span class="letter">i</span>
+    <span class="letter">n</span>
+    <span class="letter">g</span>
+    <div class="dot"></div>
+    <span class="edit-word">AI</span>
+  </div>
+</body>
+</html>
