@@ -69,9 +69,13 @@ Vortex 3b was fine-tuned using the comprehensive Vortex-50k dataset, which provi
 Vortex 3b has proudly joined the HelpingAI models family. This family includes various powerful AI models designed to provide personalized assistance, innovative teaching methods, and tailored resources to meet your unique needs. Here's a brief overview of the HelpingAI models:
 
 1️⃣ HelpingAI: The original model, created by Abhay Koul, was designed to be a conversational and friendly AI assistant.
+
 2️⃣ HelpingAI-Lite: A lighter version of HelpingAI, with 1 billion parameters, designed to simplify your learning journey.
+
 3️⃣ HelpingAI-pixelcraft: A text-to-image model that can generate images based on textual descriptions.
+
 4️⃣ HelpingAIV: A vision model that can analyze and interpret images to provide valuable insights and assistance.
+
 
 ⚠️ **Disclaimer:**
 
